@@ -1,9 +1,15 @@
 # Velum VPN
 
+<img src="client/app/public/assets/velum-logo-512-20261112.png" alt="Velum logo" width="96" height="96">
+
 Открытые исходники клиента и отдельной серверной реализации Velum.
 Репозиторий: [trutim1/VelumVPN](https://github.com/trutim1/VelumVPN).
 Новости: [ComputerHelper](https://t.me/+BkWng1uIFj9hZTZi).
 Публичный контакт: **anon12anonov@gmail.com**.
+
+Логотип в исходниках обновлён для будущих сборок; ранее опубликованные Preview
+бинарники и архивы не перезаписываются. / Source branding is updated for future
+builds; published Preview binaries and archives remain unchanged.
 
 ## Статус / Status
 
@@ -26,7 +32,9 @@ infer Windows-native features on Linux. macOS/mobile releases are not provided.
   peer transaction source and synthetic tests; no production deployment/profiles.
 - `CONTRIBUTING.md`: fork/PR workflow; public read access, no direct push required.
 - `SECURITY.md`: limitations and private reporting process.
-- `SOURCE_SNAPSHOT.json`: exact exported file hashes and deliberate transformations.
+- `SOURCE_SNAPSHOT.json`: initial export hashes and deliberate transformations.
+  Later changes are recorded in Git; icon source/derivatives have their own
+  `client/app/src-tauri/icons/BRANDING_MANIFEST.json`.
 
 Серверные source defaults не являются настройками действующего VPS. Нельзя
 запускать их поверх существующего VPN без собственной изолированной лаборатории,

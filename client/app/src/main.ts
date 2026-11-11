@@ -98,9 +98,9 @@ initLanguage();
 app.innerHTML = localizeStaticMarkup(`
   <main class="velum-shell">
     <header class="topbar">
-      <div class="brand" aria-label="Velum VPN">
-        <span class="brand-mark"><i></i><b>V</b></span>
-        <span><strong>VELUM</strong><small>PRIVATE NETWORK</small></span>
+      <div class="brand" role="img" aria-label="Velum">
+        <img class="brand-mark" src="/assets/velum-logo-512-20261112.png" width="38" height="38" alt="" aria-hidden="true">
+        <img class="brand-wordmark" src="/assets/velum-wordmark-512-20261112.png" srcset="/assets/velum-wordmark-256-20261112.png 256w, /assets/velum-wordmark-512-20261112.png 512w" sizes="(max-width: 520px) 105px, 132px" width="512" height="171" alt="" aria-hidden="true">
       </div>
       <div class="top-actions">
         <span class="local-only">${icon('LockKeyhole', 14)} Локальное хранилище</span>
