@@ -1,0 +1,37 @@
+name: Ошибка клиента
+description: Воспроизводимая ошибка без секретов и реальных профилей
+body:
+  - type: markdown
+    attributes:
+      value: "Уязвимости сообщайте приватно по SECURITY.md. Не прикладывайте .conf/.vpn, ключи, токены, .env, peer/account данные или закрытые логи."
+  - type: input
+    id: version
+    attributes:
+      label: Версия и SHA-256
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: ОС и архитектура
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Синтетические шаги воспроизведения
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Ожидание и фактический результат
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Конфиденциальность
+      options:
+        - label: Я не прикладываю секреты, настоящие профили и персональные данные.
+          required: true

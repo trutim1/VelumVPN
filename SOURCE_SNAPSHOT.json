@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "intended_repository": "trutim1/VelumVPN",
+  "license": "GPL-3.0-only",
+  "upstream_original_commit": null,
+  "source_worktree": "unborn, untracked working tree",
+  "export_scope": "client sources and generic server implementation only",
+  "git_history_included": false,
+  "binary_artifacts_included": false,
+  "legacy_windows_artifacts": [
+    {
+      "filename": "velum-windows-preview-0.1.0.exe",
+      "sha256": "5d36ad492c5d38569b0983fb9478fa62bad028ba38b6527f5bf99d56df6df997",
+      "size": 9056768
+    },
+    {
+      "filename": "velum-windows-preview-0.1.0.zip",
+      "sha256": "c03163b02ab86e1129656288766e8a25fc6a1c2cb0f34358bfdc020148711916",
+      "size": 4298109
+    }
+  ],
+  "legacy_windows_binary_matches_export": false,
+  "legacy_boundary": "No source-to-binary correspondence established; rebuild from a reviewed clean commit before a new provenance claim",
+  "gpl_text_source": "https://www.gnu.org/licenses/gpl-3.0.txt",
+  "gpl_text_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "transformations": [
+    {
+      "file": "client/app/src-tauri/src/native_import.rs",
+      "reason": "Replace personal-alias filename fixture with neutral synthetic profile",
+      "original_sha256": "cf0413b498e4dc4731e440ec8c8adcedd792366f59c54041567c9c0006220f93"
+    },
+    {
+      "file": "client/app/src/style.css",
+      "reason": "Omit separate private-preview AI artwork pending release-rights review",
+      "original_sha256": "3aecd3af91ce2e6998ac505b20f11c4fcca50c35b243a63f306d94c68e9e369d"
+    },
+    {
+      "file": "client/app/tests/server-capabilities.test.mjs",
+      "reason": "Replace personal-alias test title and all profile-name fixtures with neutral synthetic examples",
+      "original_sha256": "efb1c81894ce7e1d9d858771ff557827f32c80d286b48eb8dec85a7de8c3afc1"
+    },
+    {
+      "file": "server/gateway/Dockerfile",
+      "reason": "Owner-approved original-code GPL-3.0 label and generic example resolver config path",
+      "original_sha256": "9410660653043585ff110ede6b4db95d503734b7508255928dbf3416e4dccf1a"
+    }
+  ],
+  "source_files": [
+    {
+      "source_relative_path": "Cargo.lock",
+      "export_path": "client/Cargo.lock",
+      "source_sha256": "a81713094f8fdcb84d5e3ce7ca8fbe0b37505cacf0afe998eb48ab2b2d83acd6",
+      "export_sha256": "a81713094f8fdcb84d5e3ce7ca8fbe0b37505cacf0afe998eb48ab2b2d83acd6",
+      "bytes": 20595
+    },
+    {
+      "source_relative_path": "Cargo.toml",
+      "export_path": "client/Cargo.toml",
+      "source_sha256": "c7beacff78af9389985a6a785cc13c79f3504e94677e956b065462e4778880df",
+      "export_sha256": "c7beacff78af9389985a6a785cc13c79f3504e94677e956b065462e4778880df",
+      "bytes": 555
+    },
+    {
+      "source_relative_path": "app/index.html",
+      "export_path": "client/app/index.html",
+      "source_sha256": "cc124a2811c12d8a0e78f4524bb8d65fc2727a2f5ab0849747c4e4dc132235d5",
+      "export_sha256": "cc124a2811c12d8a0e78f4524bb8d65fc2727a2f5ab0849747c4e4dc132235d5",
+      "bytes": 347
+    },
+    {
+      "source_relative_path": "app/package.json",
+      "export_path": "client/app/package.json",
+      "source_sha256": "3b1bf7addb9ea50ef163e1ac74190534e3fb3cc9b50a58204839eb01f9cdaab1",
+      "export_sha256": "3b1bf7addb9ea50ef163e1ac74190534e3fb3cc9b50a58204839eb01f9cdaab1",
+      "bytes": 419
+    },
+    {
+      "source_relative_path": "app/pnpm-lock.yaml",
+      "export_path": "client/app/pnpm-lock.yaml",
+      "source_sha256": "75c6ec2e4a670040417906e4807fd1e3bb0b2de23f2df8128962dca1b3fbc441",
+      "export_sha256": "75c6ec2e4a670040417906e4807fd1e3bb0b2de23f2df8128962dca1b3fbc441",
+      "bytes": 25654
+    },
+    {
+      "source_relative_path": "app/pnpm-workspace.yaml",
+      "export_path": "client/app/pnpm-workspace.yaml",
+      "source_sha256": "ac02d96368617c760f093cfe61fdec64b6244007ab3553e0d6621f706f54a353",
+      "export_sha256": "ac02d96368617c760f093cfe61fdec64b6244007ab3553e0d6621f706f54a353",
+      "bytes": 29
+    },
+    {
+      "source_relative_path": "app/src-tauri/Cargo.lock",
+      "export_path": "client/app/src-tauri/Cargo.lock",
+      "source_sha256": "16d3316921d0d463a7d97a2a39c5a316519bf569fd6bbef473b3840eddac2fb6",
+      "export_sha256": "16d3316921d0d463a7d97a2a39c5a316519bf569fd6bbef473b3840eddac2fb6",
+      "bytes": 113901
+    },
+    {
+      "source_relative_path": "app/src-tauri/Cargo.toml",
+      "export_path": "client/app/src-tauri/Cargo.toml",
+      "source_sha256": "75e87c8201a038b78147e89db919fc68188298d8bfc50f8f9baff093c7b85944",
+      "export_sha256": "75e87c8201a038b78147e89db919fc68188298d8bfc50f8f9baff093c7b85944",
+      "bytes": 574
+    },
+    {
+      "source_relative_path": "app/src-tauri/build.rs",
+      "export_path": "client/app/src-tauri/build.rs",
+      "source_sha256": "c4b7b47a3f037e7d2f287977f6e9f48cc854174220554880e1baf354751afe1c",
+      "export_sha256": "c4b7b47a3f037e7d2f287977f6e9f48cc854174220554880e1baf354751afe1c",
+      "bytes": 242
+    },
+    {
+      "source_relative_path": "app/src-tauri/capabilities/default.json",
+      "export_path": "client/app/src-tauri/capabilities/default.json",
+      "source_sha256": "34bf5d1e4bf7abd81ce3ed3de70b0ac444fa8a814d60eb0c0e2584358f0dc674",
+      "export_sha256": "34bf5d1e4bf7abd81ce3ed3de70b0ac444fa8a814d60eb0c0e2584358f0dc674",
+      "bytes": 169
+    },
+    {
+      "source_relative_path": "app/src-tauri/icons/app-icon.svg",
+      "export_path": "client/app/src-tauri/icons/app-icon.svg",
+      "source_sha256": "95637a5fba8c139a02c8c3df2b4f8a8661ec82cef56db3f33baaba7cc94b4df8",
+      "export_sha256": "95637a5fba8c139a02c8c3df2b4f8a8661ec82cef56db3f33baaba7cc94b4df8",
+      "bytes": 686
+    },
+    {
+      "source_relative_path": "app/src-tauri/icons/icon.ico",
+      "export_path": "client/app/src-tauri/icons/icon.ico",
+      "source_sha256": "32e05aafebaf9cdc32696fa3eaae1c566d1017e9d203af94b171f8e355408276",
+      "export_sha256": "32e05aafebaf9cdc32696fa3eaae1c566d1017e9d203af94b171f8e355408276",
+      "bytes": 21044
+    },
+    {
+      "source_relative_path": "app/src-tauri/icons/icon.png",
+      "export_path": "client/app/src-tauri/icons/icon.png",
+      "source_sha256": "79fc1a099638b72f36eb22961de3b68dce3dfc97446d4e0ddc9bc99a9d63c81f",
+      "export_sha256": "79fc1a099638b72f36eb22961de3b68dce3dfc97446d4e0ddc9bc99a9d63c81f",
+      "bytes": 21057
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/app_selection.rs",
+      "export_path": "client/app/src-tauri/src/app_selection.rs",
+      "source_sha256": "e3dee55536e015c5b0a869cb43482fcb71bdb7ceeefbde62d08a25d134383b5a",
+      "export_sha256": "e3dee55536e015c5b0a869cb43482fcb71bdb7ceeefbde62d08a25d134383b5a",
+      "bytes": 38451
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/backend_observation.rs",
+      "export_path": "client/app/src-tauri/src/backend_observation.rs",
+      "source_sha256": "10cacffd84e39e5dac6a7817f91237780763edfef4b6b379806f0b2295972b51",
+      "export_sha256": "10cacffd84e39e5dac6a7817f91237780763edfef4b6b379806f0b2295972b51",
+      "bytes": 7284
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/bin/velum-import.rs",
+      "export_path": "client/app/src-tauri/src/bin/velum-import.rs",
+      "source_sha256": "a966873f5ab96d3e285099b0c595a3aa42dc48c89b9ed121da38f45de09a7886",
+      "export_sha256": "a966873f5ab96d3e285099b0c595a3aa42dc48c89b9ed121da38f45de09a7886",
+      "bytes": 6755
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/main.rs",
+      "export_path": "client/app/src-tauri/src/main.rs",
+      "source_sha256": "7b19877bdfc4328c90f79fc2c4c24aac0f815c1485798307d30b4c8040dbd745",
+      "export_sha256": "7b19877bdfc4328c90f79fc2c4c24aac0f815c1485798307d30b4c8040dbd745",
+      "bytes": 51180
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/native_import.rs",
+      "export_path": "client/app/src-tauri/src/native_import.rs",
+      "source_sha256": "cf0413b498e4dc4731e440ec8c8adcedd792366f59c54041567c9c0006220f93",
+      "export_sha256": "770dca4ab5337d80e269e45a5172e91d63bba9d7505fb37521f6814e0aa4636a",
+      "bytes": 8313
+    },
+    {
+      "source_relative_path": "app/src-tauri/src/profile_store.rs",
+      "export_path": "client/app/src-tauri/src/profile_store.rs",
+      "source_sha256": "27c5c52dfe69e0bdd1ae0011fdf70409cc64ac06c7b16f408fc40c3bf85f2259",
+      "export_sha256": "27c5c52dfe69e0bdd1ae0011fdf70409cc64ac06c7b16f408fc40c3bf85f2259",
+      "bytes": 5675
+    },
+    {
+      "source_relative_path": "app/src-tauri/tauri.conf.json",
+      "export_path": "client/app/src-tauri/tauri.conf.json",
+      "source_sha256": "60ef76ad1a9bd7ae7ab2bfe990cd6279b4b2590d6ae95769a0e7f83c94730077",
+      "export_sha256": "60ef76ad1a9bd7ae7ab2bfe990cd6279b4b2590d6ae95769a0e7f83c94730077",
+      "bytes": 1170
+    },
+    {
+      "source_relative_path": "app/src/bottom-sheet.ts",
+      "export_path": "client/app/src/bottom-sheet.ts",
+      "source_sha256": "2c9c97c3ad6ad740c5529f474256d426728fe4f0b3da8ee0812e7c904edded84",
+      "export_sha256": "2c9c97c3ad6ad740c5529f474256d426728fe4f0b3da8ee0812e7c904edded84",
+      "bytes": 4398
+    },
+    {
+      "source_relative_path": "app/src/i18n.ts",
+      "export_path": "client/app/src/i18n.ts",
+      "source_sha256": "62ea8e4b844e87e039a23103caddf856cfe35f1f2263d059c4a7749765f4826d",
+      "export_sha256": "62ea8e4b844e87e039a23103caddf856cfe35f1f2263d059c4a7749765f4826d",
+      "bytes": 43047
+    },
+    {
+      "source_relative_path": "app/src/main.ts",
+      "export_path": "client/app/src/main.ts",
+      "source_sha256": "cd0ab867e8d49391a53098ddf458a58d9058415cb70e09c8211ffce6eb4e101c",
+      "export_sha256": "cd0ab867e8d49391a53098ddf458a58d9058415cb70e09c8211ffce6eb4e101c",
+      "bytes": 66612
+    },
+    {
+      "source_relative_path": "app/src/scroll-activity.ts",
+      "export_path": "client/app/src/scroll-activity.ts",
+      "source_sha256": "59d9df3ca3aefdecd439c30e494dbf83a84d737f4c36e2546c7e9837a8d12c93",
+      "export_sha256": "59d9df3ca3aefdecd439c30e494dbf83a84d737f4c36e2546c7e9837a8d12c93",
+      "bytes": 1688
+    },
+    {
+      "source_relative_path": "app/src/server-capabilities.ts",
+      "export_path": "client/app/src/server-capabilities.ts",
+      "source_sha256": "015ffea4d2d16bde3377c2012a090bcd08b9196eee408a436e5bec112dce6761",
+      "export_sha256": "015ffea4d2d16bde3377c2012a090bcd08b9196eee408a436e5bec112dce6761",
+      "bytes": 7829
+    },
+    {
+      "source_relative_path": "app/src/style.css",
+      "export_path": "client/app/src/style.css",
+      "source_sha256": "3aecd3af91ce2e6998ac505b20f11c4fcca50c35b243a63f306d94c68e9e369d",
+      "export_sha256": "e54a07d5f35a1c0815c5d881dea9562083ff206923c69bdaa6da582d849b7e51",
+      "bytes": 34200
+    },
+    {
+      "source_relative_path": "app/tests/app-rules-smoke.mjs",
+      "export_path": "client/app/tests/app-rules-smoke.mjs",
+      "source_sha256": "30eac842700f71d74761c028b04aee87c283d6dce2bbb453a99e8fd14499c2b3",
+      "export_sha256": "30eac842700f71d74761c028b04aee87c283d6dce2bbb453a99e8fd14499c2b3",
+      "bytes": 18628
+    },
+    {
+      "source_relative_path": "app/tests/diagnostics-smoke.mjs",
+      "export_path": "client/app/tests/diagnostics-smoke.mjs",
+      "source_sha256": "260122cfd865b66a7ceadd443fefd0ede54ad93ffd4be745a6ae713853de9f79",
+      "export_sha256": "260122cfd865b66a7ceadd443fefd0ede54ad93ffd4be745a6ae713853de9f79",
+      "bytes": 6041
+    },
+    {
+      "source_relative_path": "app/tests/i18n.test.mjs",
+      "export_path": "client/app/tests/i18n.test.mjs",
+      "source_sha256": "51855acf055407fbfd0265dd62e2f58a8234b89bd546a8f3f6f2fd41b45e8467",
+      "export_sha256": "51855acf055407fbfd0265dd62e2f58a8234b89bd546a8f3f6f2fd41b45e8467",
+      "bytes": 7398
+    },
+    {
+      "source_relative_path": "app/tests/layout-smoke.mjs",
+      "export_path": "client/app/tests/layout-smoke.mjs",
+      "source_sha256": "ac47b784d46c06f0e61d7c464079d2d25e42e5ee991b91c9f3d935a71a1971b4",
+      "export_sha256": "ac47b784d46c06f0e61d7c464079d2d25e42e5ee991b91c9f3d935a71a1971b4",
+      "bytes": 6799
+    },
+    {
+      "source_relative_path": "app/tests/run-unit.mjs",
+      "export_path": "client/app/tests/run-unit.mjs",
+      "source_sha256": "a4f64893ffeaf2720bee370bc71001b2d4877ce47debe813f8c26efa2bd260bd",
+      "export_sha256": "a4f64893ffeaf2720bee370bc71001b2d4877ce47debe813f8c26efa2bd260bd",
+      "bytes": 562
+    },
+    {
+      "source_relative_path": "app/tests/scroll-activity.test.mjs",
+      "export_path": "client/app/tests/scroll-activity.test.mjs",
+      "source_sha256": "f38fcd2ad9d8dac1a49119284045366dace19f60cb360ceefc18dc5ec589df5f",
+      "export_sha256": "f38fcd2ad9d8dac1a49119284045366dace19f60cb360ceefc18dc5ec589df5f",
+      "bytes": 4124
+    },
+    {
+      "source_relative_path": "app/tests/server-capabilities.test.mjs",
+      "export_path": "client/app/tests/server-capabilities.test.mjs",
+      "source_sha256": "efb1c81894ce7e1d9d858771ff557827f32c80d286b48eb8dec85a7de8c3afc1",
+      "export_sha256": "504b72432a74ce246e32de6d6949d7e6375bbabc143fe28068ad968818f5e973",
+      "bytes": 6909
+    },
+    {
+      "source_relative_path": "app/tests/sheets-smoke.mjs",
+      "export_path": "client/app/tests/sheets-smoke.mjs",
+      "source_sha256": "8a7becd6504adb72f90b2b36bdd2c8ffbb9d2353afe904972fe55d46949197ce",
+      "export_sha256": "8a7becd6504adb72f90b2b36bdd2c8ffbb9d2353afe904972fe55d46949197ce",
+      "bytes": 19157
+    },
+    {
+      "source_relative_path": "app/tsconfig.json",
+      "export_path": "client/app/tsconfig.json",
+      "source_sha256": "4d1b258b3334afc72cc7e2c9a9927f2635e1ee4cf387fdaaa79de57cf6a8053f",
+      "export_sha256": "4d1b258b3334afc72cc7e2c9a9927f2635e1ee4cf387fdaaa79de57cf6a8053f",
+      "bytes": 247
+    },
+    {
+      "source_relative_path": "src/amnezia_share.rs",
+      "export_path": "client/src/amnezia_share.rs",
+      "source_sha256": "37771932ada75153d320418a12b74806e56abcf056687297dca4e493e668c84d",
+      "export_sha256": "37771932ada75153d320418a12b74806e56abcf056687297dca4e493e668c84d",
+      "bytes": 11286
+    },
+    {
+      "source_relative_path": "src/config.rs",
+      "export_path": "client/src/config.rs",
+      "source_sha256": "a8c61f385760751286f121e2a3a86855ac8dd4d1acd4c0f125e3603ad544d7ec",
+      "export_sha256": "a8c61f385760751286f121e2a3a86855ac8dd4d1acd4c0f125e3603ad544d7ec",
+      "bytes": 21249
+    },
+    {
+      "source_relative_path": "src/lib.rs",
+      "export_path": "client/src/lib.rs",
+      "source_sha256": "bf151e8ecdf91778c46f90e37a627962389ac324ee9fe694941f67ff6351d9a6",
+      "export_sha256": "bf151e8ecdf91778c46f90e37a627962389ac324ee9fe694941f67ff6351d9a6",
+      "bytes": 112
+    },
+    {
+      "source_relative_path": "src/main.rs",
+      "export_path": "client/src/main.rs",
+      "source_sha256": "f276dbc922e3040425d5cd9938e5aef95d0c4ea28d3ffb60a5f085db1a6cd589",
+      "export_sha256": "f276dbc922e3040425d5cd9938e5aef95d0c4ea28d3ffb60a5f085db1a6cd589",
+      "bytes": 3176
+    },
+    {
+      "source_relative_path": "src/migration.rs",
+      "export_path": "client/src/migration.rs",
+      "source_sha256": "d243a4ff2465c74a14377b8a743443cc0c3ca38dd793d8a03f43a06095620b1f",
+      "export_sha256": "d243a4ff2465c74a14377b8a743443cc0c3ca38dd793d8a03f43a06095620b1f",
+      "bytes": 5678
+    },
+    {
+      "source_relative_path": "src/migration_input.rs",
+      "export_path": "client/src/migration_input.rs",
+      "source_sha256": "9f7049c0a08f8f3b9618a134dd5da3001a5001df8d82c42b597c0e4efeae2e44",
+      "export_sha256": "9f7049c0a08f8f3b9618a134dd5da3001a5001df8d82c42b597c0e4efeae2e44",
+      "bytes": 6639
+    },
+    {
+      "source_relative_path": "src/protocol.rs",
+      "export_path": "client/src/protocol.rs",
+      "source_sha256": "9d31cc5d9439fc444e88ee3f7b41956bf6258ce539b5b481290c8b050776bbd4",
+      "export_sha256": "9d31cc5d9439fc444e88ee3f7b41956bf6258ce539b5b481290c8b050776bbd4",
+      "bytes": 12872
+    },
+    {
+      "source_relative_path": "src/split.rs",
+      "export_path": "client/src/split.rs",
+      "source_sha256": "1e76923e5b13906ffca44546984108fef24730821e25c24206078d00c1bec5f1",
+      "export_sha256": "1e76923e5b13906ffca44546984108fef24730821e25c24206078d00c1bec5f1",
+      "bytes": 5574
+    },
+    {
+      "source_relative_path": "tests/migration.rs",
+      "export_path": "client/tests/migration.rs",
+      "source_sha256": "5d7e7c11607b01a7ce3352c7aa6ee6d309f8e8cd3a43fae431d24018f2762b45",
+      "export_sha256": "5d7e7c11607b01a7ce3352c7aa6ee6d309f8e8cd3a43fae431d24018f2762b45",
+      "bytes": 4818
+    },
+    {
+      "source_relative_path": "gateway/Dockerfile",
+      "export_path": "server/gateway/Dockerfile",
+      "source_sha256": "9410660653043585ff110ede6b4db95d503734b7508255928dbf3416e4dccf1a",
+      "export_sha256": "053272b0c83634c3d3b0bfe0b42fc8426e062b13fccd4909011c6055dcbb84cc",
+      "bytes": 5246
+    },
+    {
+      "source_relative_path": "gateway/entrypoint.sh",
+      "export_path": "server/gateway/entrypoint.sh",
+      "source_sha256": "4143bb659c995918b5666c930c2c32695c9dd107d2199ab8a0f979243fea75a9",
+      "export_sha256": "4143bb659c995918b5666c930c2c32695c9dd107d2199ab8a0f979243fea75a9",
+      "bytes": 5213
+    },
+    {
+      "source_relative_path": "gateway/unbound.conf",
+      "export_path": "server/gateway/unbound.example.conf",
+      "source_sha256": "e807097c924267125639723077fd1cf208770f734a44d46a512993f54160009f",
+      "export_sha256": "e807097c924267125639723077fd1cf208770f734a44d46a512993f54160009f",
+      "bytes": 782
+    },
+    {
+      "source_relative_path": "gateway/add-peer.sh",
+      "export_path": "server/gateway/add-peer.sh",
+      "source_sha256": "c7f0b3bcc629d50e31f53d33fed08cb13bfb7af82b3acf0b0a1465d258b9cae3",
+      "export_sha256": "c7f0b3bcc629d50e31f53d33fed08cb13bfb7af82b3acf0b0a1465d258b9cae3",
+      "bytes": 15070
+    },
+    {
+      "source_relative_path": "gateway/revoke-peer.sh",
+      "export_path": "server/gateway/revoke-peer.sh",
+      "source_sha256": "a245eb2bad84033ff8bc8b1d4a76f4a0683668ffda9d55850e9255d807ab675c",
+      "export_sha256": "a245eb2bad84033ff8bc8b1d4a76f4a0683668ffda9d55850e9255d807ab675c",
+      "bytes": 24568
+    },
+    {
+      "source_relative_path": "gateway/tests/entrypoint-tests.sh",
+      "export_path": "server/gateway/tests/entrypoint-tests.sh",
+      "source_sha256": "04f10183166f36e55d9e0558867c8bc8dda10f434396c7862b3cac2d782b557b",
+      "export_sha256": "04f10183166f36e55d9e0558867c8bc8dda10f434396c7862b3cac2d782b557b",
+      "bytes": 8423
+    },
+    {
+      "source_relative_path": "gateway/tests/revoke-peer-tests.sh",
+      "export_path": "server/gateway/tests/revoke-peer-tests.sh",
+      "source_sha256": "bf7408bf842f3a8f4a84033dc5840878a6066c3b73b691f855482fec2f2423c2",
+      "export_sha256": "bf7408bf842f3a8f4a84033dc5840878a6066c3b73b691f855482fec2f2423c2",
+      "bytes": 23268
+    },
+    {
+      "source_relative_path": "gateway/tests/awg-quick-strip-tests.sh",
+      "export_path": "server/gateway/tests/awg-quick-strip-tests.sh",
+      "source_sha256": "451279b76ae38f6073270dcfc66e6d46829f43bf159c92d3ed019b6f8f24c316",
+      "export_sha256": "451279b76ae38f6073270dcfc66e6d46829f43bf159c92d3ed019b6f8f24c316",
+      "bytes": 2344
+    },
+    {
+      "source_relative_path": "gateway/tests/strip-from-archive.sh",
+      "export_path": "server/gateway/tests/strip-from-archive.sh",
+      "source_sha256": "dfd527874c164a0c2af77c8da740b188689d268c2a022c4cbedb28f9003792f3",
+      "export_sha256": "dfd527874c164a0c2af77c8da740b188689d268c2a022c4cbedb28f9003792f3",
+      "bytes": 1152
+    }
+  ],
+  "secret_scan": {
+    "token_pem_url_credential_private_infrastructure_hits": 0,
+    "obvious_synthetic_uniform_key_occurrences": 0,
+    "complete_security_audit": false
+  },
+  "omitted": [
+    "site/payment code",
+    "gateway operational compose/deploy/upgrade scripts",
+    "VPS endpoints/configs",
+    "real VPN profiles and secrets",
+    "Windows helper/driver",
+    "node_modules/target/dist",
+    "AI private-preview background artwork",
+    "old release artifacts",
+    "Git history"
+  ],
+  "inventory_sha256": "5f23f869fe9b64b8060bca771867b1f29e27de5be508379836c44747f84f50fa"
+}

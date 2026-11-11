@@ -1,0 +1,15 @@
+**/target/
+**/node_modules/
+**/dist/
+**/.env*
+**/*.conf
+!server/gateway/unbound.example.conf
+**/*.vpn
+**/*.key
+**/*.pem
+**/*.pfx
+**/*.exe
+**/*.dll
+output/
+release/
+.DS_Store

@@ -1,0 +1,58 @@
+name: PR metadata review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # No checkout, PR scripts, repository secrets, write permissions or deploy.
+      - name: Check changed-file scope
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr || pr.changed_files > 300) {
+              core.setFailed('PR missing or too large for bounded metadata review.');
+              return;
+            }
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+              per_page: 100
+            });
+            if (files.length !== pr.changed_files) {
+              core.setFailed('Changed-file inventory is incomplete.');
+              return;
+            }
+            const forbidden = /(^|\/)(\.env(?:\..*)?|id_rsa|id_ed25519)$|\.(?:conf|vpn|p12|pfx|pem|key|exe|dll|msi|deb|apk)$/i;
+            const privateArea = /^(?:gateway|windows-backend|deploy|integrations|release\/windows|output)\//;
+            const serverAllowlist = new Set([
+              'server/LICENSE',
+              'server/gateway/Dockerfile',
+              'server/gateway/entrypoint.sh',
+              'server/gateway/unbound.example.conf',
+              'server/gateway/add-peer.sh',
+              'server/gateway/revoke-peer.sh',
+              'server/gateway/tests/entrypoint-tests.sh',
+              'server/gateway/tests/revoke-peer-tests.sh',
+              'server/gateway/tests/awg-quick-strip-tests.sh',
+              'server/gateway/tests/strip-from-archive.sh'
+            ]);
+            const blocked = filename => {
+              if (filename.startsWith('server/')) return !serverAllowlist.has(filename);
+              return forbidden.test(filename) || privateArea.test(filename);
+            };
+            if (files.some(file => blocked(file.filename) || (file.previous_filename && blocked(file.previous_filename)))) {
+              core.setFailed('PR includes a sensitive, private-infrastructure or binary path. Owner review required.');
+              return;
+            }
+            core.info('Bounded filename review passed. No PR code was executed; this is not a secret scan or a client test.');

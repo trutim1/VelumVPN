@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Velum VPN",
+  "version": "0.1.0",
+  "identifier": "ru.anon.velum",
+  "build": {
+    "beforeDevCommand": "pnpm dev --host 127.0.0.1 --port 1420 --strictPort",
+    "beforeBuildCommand": "pnpm build",
+    "devUrl": "http://127.0.0.1:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Velum VPN",
+        "width": 380,
+        "height": 720,
+        "minWidth": 380,
+        "minHeight": 680,
+        "center": true,
+        "resizable": true,
+        "maximizable": true,
+        "maximized": false,
+        "fullscreen": false
+      }
+    ],
+    "security": { "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self'; connect-src ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; base-uri 'none'" }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "shortDescription": "Local-first VPN profile manager",
+    "longDescription": "Velum desktop preview with protected local AWG profile storage.",
+    "windows": { "wix": { "language": "ru-RU" } }
+  }
+}
