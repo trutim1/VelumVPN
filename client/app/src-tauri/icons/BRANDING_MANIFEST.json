@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "approved_source": "app-icon.png",
+  "source_sha256": "d69bfa225ed48b035d3aaea54df25dc39156934b56b6f92ec892863c01cced65",
+  "source_dimensions": [
+    512,
+    512
+  ],
+  "source_has_alpha": true,
+  "source_metadata_text_or_exif_present": false,
+  "artwork": "Final user-approved dark-tile cutout with no green background",
+  "superseded_source_sha256": "9f52deeace9a00d7beb4a0695a83de2b9bff38fa05e880cb6b603d25d3314726",
+  "conversion": "Installed Tauri CLI 2.11.4 icon generator; main icon.png is an exact copy of approved 512px PNG; no AI redraw or new crop",
+  "svg_format": "Exact PNG embedded in SVG compatibility wrapper, not vector tracing",
+  "scope": "Source assets for future builds only",
+  "published_release_assets_modified": false,
+  "files": [
+    {
+      "path": "128x128.png",
+      "bytes": 24046,
+      "sha256": "999323b8f6e1600bfb4c3ef9cce3ef84f78880cd781c473ac252165de41210d3"
+    },
+    {
+      "path": "128x128@2x.png",
+      "bytes": 78965,
+      "sha256": "cf0604da6f36df908a45bb64be3bf245811654f054e45d20bb4506eeb0ae61b6"
+    },
+    {
+      "path": "32x32.png",
+      "bytes": 2662,
+      "sha256": "71d125febed4dccd9719b440a56cc341575659ccfa30e9bcdbab7029ff09037e"
+    },
+    {
+      "path": "64x64.png",
+      "bytes": 7689,
+      "sha256": "3520c9986776e250a4a8cb9f3cf73875963bb7a20c2ef3283d34071708fae265"
+    },
+    {
+      "path": "android/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 261,
+      "sha256": "760d4b8a06bf7163dd010c33ad2cac9e4a75fa0177afaba042f83e311eef0c3e"
+    },
+    {
+      "path": "android/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 35984,
+      "sha256": "2573ee511eeffd106541196e1a9337e862e052ab96d7820eb5d22018a29d604b"
+    },
+    {
+      "path": "android/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 4121,
+      "sha256": "0503f4e50eca4ce64f364d13d60fce9a60eeb401567c4429d6e3b441cb83a4b4"
+    },
+    {
+      "path": "android/mipmap-hdpi/ic_launcher.png",
+      "bytes": 4161,
+      "sha256": "a3f90fb1113e3132f9bac64f2eafe67efc9c547110630ec55c5d09b9066866c9"
+    },
+    {
+      "path": "android/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 17990,
+      "sha256": "b1c3e51b22642690a96a95b1ca67b1b3a472f830fbdb7013f8d080ed6546ceee"
+    },
+    {
+      "path": "android/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 3936,
+      "sha256": "886ece628e4db1de315825d2015911035cded5cdd04740419ef54ee3a49ef479"
+    },
+    {
+      "path": "android/mipmap-mdpi/ic_launcher.png",
+      "bytes": 3976,
+      "sha256": "a0550d9b3ac8566c4ef907da45fbb61513163f96895dd24ec2751d39ebb5cf72"
+    },
+    {
+      "path": "android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 58517,
+      "sha256": "203b2fede176c207bddb4c79bae632374b4ab15a8b84c093c3d32e7fefedcefd"
+    },
+    {
+      "path": "android/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 11963,
+      "sha256": "ef026bfeb6d55383ee59b1e2e8aeb6da638f87104db634a782989e2ceaefb7fd"
+    },
+    {
+      "path": "android/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 11978,
+      "sha256": "a57ab9bcdea33e166c7cf5c7d452fd3fc28d672a79c30dab944c5e7251121cb9"
+    },
+    {
+      "path": "android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 119810,
+      "sha256": "29ab58f3f08c97246e5be0d8969d8da19cd76942bbf96f40c1e678f280516149"
+    },
+    {
+      "path": "android/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 23524,
+      "sha256": "63e067244ed95fb20d10900459ef35f130018de777a3fd6e79a0b9b0ee152dfc"
+    },
+    {
+      "path": "android/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 23130,
+      "sha256": "95ad50149200b481acad06c3049d0bfa9b1ba6f2230563e3bc0bacc9e79e104e"
+    },
+    {
+      "path": "android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 203639,
+      "sha256": "41a0a30f935462b3744a494f2d0e2fa702ec2673214457a2a6f89982bca31613"
+    },
+    {
+      "path": "android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 38600,
+      "sha256": "3792a3a2118aa9844d76e7131923ed35293d7a4e70160516c88706307382e619"
+    },
+    {
+      "path": "android/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 37794,
+      "sha256": "360a2d774d5c3ca8ea60435a8b62c2b0abc35ce5d962a2d00597e76cb4850e8a"
+    },
+    {
+      "path": "android/values/ic_launcher_background.xml",
+      "bytes": 115,
+      "sha256": "0687336f0ccc6f7ee09c7c95110667c63b75931238df779a21af401fb864cd34"
+    },
+    {
+      "path": "app-icon.png",
+      "bytes": 282205,
+      "sha256": "d69bfa225ed48b035d3aaea54df25dc39156934b56b6f92ec892863c01cced65"
+    },
+    {
+      "path": "app-icon.svg",
+      "bytes": 376476,
+      "sha256": "b9be39af00a97d96ee1706ecf34b8098c2238826b954332a16d368716d74dfb9"
+    },
+    {
+      "path": "icon.icns",
+      "bytes": 1431591,
+      "sha256": "33b0415262d355a5322746080ffb5981a63091501be6eedd80e9150f06c7d63d"
+    },
+    {
+      "path": "icon.ico",
+      "bytes": 99575,
+      "sha256": "69a15a806fa493ab9677a1261fe924983bd3fc9dba50374de3db7d89cfdaa886"
+    },
+    {
+      "path": "icon.png",
+      "bytes": 282205,
+      "sha256": "d69bfa225ed48b035d3aaea54df25dc39156934b56b6f92ec892863c01cced65"
+    },
+    {
+      "path": "ios/AppIcon-20x20@1x.png",
+      "bytes": 1261,
+      "sha256": "a0035e047c36290a9a7eb9d1373c5ed20fc0d1b7a8d5b5b451eb1ba2638323eb"
+    },
+    {
+      "path": "ios/AppIcon-20x20@2x-1.png",
+      "bytes": 3556,
+      "sha256": "0c64026ef19f2b88073c668efb62e59c20a81e4d9a7f1386c00e76826203139f"
+    },
+    {
+      "path": "ios/AppIcon-20x20@2x.png",
+      "bytes": 3556,
+      "sha256": "0c64026ef19f2b88073c668efb62e59c20a81e4d9a7f1386c00e76826203139f"
+    },
+    {
+      "path": "ios/AppIcon-20x20@3x.png",
+      "bytes": 6780,
+      "sha256": "8189583cb38a3fadfe2bab5eec22a6dce3daefd1cb9215ae49573dd8fbcff6ab"
+    },
+    {
+      "path": "ios/AppIcon-29x29@1x.png",
+      "bytes": 2175,
+      "sha256": "075287007ff104203481d16347b688555db38655cf2e16c13ca8800500050fa3"
+    },
+    {
+      "path": "ios/AppIcon-29x29@2x-1.png",
+      "bytes": 6392,
+      "sha256": "b19a9ecaa03ade4f0cb47ab5d7602281f0ec8fb5c5da60a33ec1c3101352cd17"
+    },
+    {
+      "path": "ios/AppIcon-29x29@2x.png",
+      "bytes": 6392,
+      "sha256": "b19a9ecaa03ade4f0cb47ab5d7602281f0ec8fb5c5da60a33ec1c3101352cd17"
+    },
+    {
+      "path": "ios/AppIcon-29x29@3x.png",
+      "bytes": 12391,
+      "sha256": "64a8afebd0060fcc71edfbae577d0c4410fe5b0ce9b094cc4f59d136bd429520"
+    },
+    {
+      "path": "ios/AppIcon-40x40@1x.png",
+      "bytes": 3556,
+      "sha256": "0c64026ef19f2b88073c668efb62e59c20a81e4d9a7f1386c00e76826203139f"
+    },
+    {
+      "path": "ios/AppIcon-40x40@2x-1.png",
+      "bytes": 10838,
+      "sha256": "abce3bfacaacc5a9e8dc9a5c21d34d2791ae8be1b007bd5c2eb11fc244fd80d0"
+    },
+    {
+      "path": "ios/AppIcon-40x40@2x.png",
+      "bytes": 10838,
+      "sha256": "abce3bfacaacc5a9e8dc9a5c21d34d2791ae8be1b007bd5c2eb11fc244fd80d0"
+    },
+    {
+      "path": "ios/AppIcon-40x40@3x.png",
+      "bytes": 21304,
+      "sha256": "a9768cd8c3f07caa547449ee5d61515ff37ffc156059e604fddc2e176399cc9a"
+    },
+    {
+      "path": "ios/AppIcon-512@2x.png",
+      "bytes": 703950,
+      "sha256": "d1947e611ae3cebb906cd1fba99ddd45b1bf3d8752fcae3dafa727ee1b2fa93a"
+    },
+    {
+      "path": "ios/AppIcon-60x60@2x.png",
+      "bytes": 21304,
+      "sha256": "a9768cd8c3f07caa547449ee5d61515ff37ffc156059e604fddc2e176399cc9a"
+    },
+    {
+      "path": "ios/AppIcon-60x60@3x.png",
+      "bytes": 42661,
+      "sha256": "923568d15e55f749cebcdb1a24e12f060afaed3a11ccf7e5d0587a127969404b"
+    },
+    {
+      "path": "ios/AppIcon-76x76@1x.png",
+      "bytes": 9867,
+      "sha256": "024b2dd5125131493f138ea50c7f056bdd95b65925db87eaff9bf05d8634b414"
+    },
+    {
+      "path": "ios/AppIcon-76x76@2x.png",
+      "bytes": 32069,
+      "sha256": "507fe0e38f021614288a259a4643b433c6b9a58a23a5d4357c76287c8647674e"
+    },
+    {
+      "path": "ios/AppIcon-83.5x83.5@2x.png",
+      "bytes": 37658,
+      "sha256": "b55bdab38474a092322f21a98de4859282dbcf43fe3c008fd4bd680f407dc3a5"
+    },
+    {
+      "path": "README.branding.md",
+      "bytes": 2015,
+      "sha256": "7d87dbcdfa5f15d930bed2a9ff019d46d2af6cc64d0df124a5a8207a0bdd6b35"
+    },
+    {
+      "path": "Square107x107Logo.png",
+      "bytes": 17666,
+      "sha256": "a4b52a732b8f761085912cd2a070cc3fdb9ea954cf915ac6bd505f4371628d25"
+    },
+    {
+      "path": "Square142x142Logo.png",
+      "bytes": 28541,
+      "sha256": "95a4cf184ded048bc540791b95c7b2d791637ea309113da9620b25d05a8765d6"
+    },
+    {
+      "path": "Square150x150Logo.png",
+      "bytes": 31432,
+      "sha256": "9ae620bc7880caf5c39f9591a6f8e6d200456c3c5b79db2589d88fe50cc752e6"
+    },
+    {
+      "path": "Square284x284Logo.png",
+      "bytes": 94187,
+      "sha256": "9694303a8e434db054b3438fe5f21be8b57d814bc6d96c76b13c2ba6bef0afcc"
+    },
+    {
+      "path": "Square30x30Logo.png",
+      "bytes": 2372,
+      "sha256": "e0eb9c788d4602fe7984ef7b23eeea63b2abc2a03cc237632d4d57f518bf4ddf"
+    },
+    {
+      "path": "Square310x310Logo.png",
+      "bytes": 110727,
+      "sha256": "9775dabfdd34e8a7450ee09b5e2af9599cf2890935b7badac2199d1b7be45516"
+    },
+    {
+      "path": "Square44x44Logo.png",
+      "bytes": 4239,
+      "sha256": "22192c0f81764bfff18ed974e7a2cc0bac8ebba1475850c6b22af3ee8ab922eb"
+    },
+    {
+      "path": "Square71x71Logo.png",
+      "bytes": 9002,
+      "sha256": "f951be78dffea437b186ebd4d759f2431a8f1c7f3b475963393a6662dd3ca68c"
+    },
+    {
+      "path": "Square89x89Logo.png",
+      "bytes": 13127,
+      "sha256": "685a76d7d486deb2c4f61d759c15117c21ef12196c21de123322a8151d2a70a1"
+    },
+    {
+      "path": "StoreLogo.png",
+      "bytes": 5208,
+      "sha256": "d49c4faee635b310063d526237db80784493feabafdb412d21863b8998d9331c"
+    }
+  ]
+}
